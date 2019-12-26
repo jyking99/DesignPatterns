@@ -1,4 +1,4 @@
-package templateMethod;
+package ch03.templateMethod;
 
 public abstract class AbstractDisplay { // ��ݥ��饹AbstractDisplay
     public abstract void open();        // ���֥��饹�˼�����ޤ�������ݥ᥽�å�(1) open

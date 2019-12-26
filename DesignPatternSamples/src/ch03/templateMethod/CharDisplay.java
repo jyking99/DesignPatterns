@@ -1,4 +1,4 @@
-package templateMethod;
+package ch03.templateMethod;
 
 public class CharDisplay extends AbstractDisplay {  // CharDisplay�ϡ�AbstractDisplay�Υ��֥��饹��
     private char ch;                                // ɽ�����٤�ʸ����

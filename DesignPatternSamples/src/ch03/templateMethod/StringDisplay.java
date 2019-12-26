@@ -1,4 +1,4 @@
-package templateMethod;
+package ch03.templateMethod;
 
 public class StringDisplay extends AbstractDisplay {    // StringDisplay�⡢AbstractDisplay�Υ��֥��饹��
     private String string;                              // ɽ������٤�ʸ����

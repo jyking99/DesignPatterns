@@ -1,4 +1,4 @@
-package templateMethod;
+package ch03.templateMethod;
 
 public class Main {
     public static void main(String[] args) {
