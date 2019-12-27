@@ -2,11 +2,11 @@ package ch03.templateMethod;
 
 public class Main {
     public static void main(String[] args) {
-        AbstractDisplay d1 = new CharDisplay('H');                  // 'H'ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½CharDisplayï¿½Î¥ï¿½ï¿½ó¥¹¥ï¿½ï¿½ó¥¹¤ï¿½1ï¿½Äºï¿½ë¡£
-        AbstractDisplay d2 = new StringDisplay("Hello, world.");    // "Hello, world."ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½StringDisplayï¿½Î¥ï¿½ï¿½ó¥¹¥ï¿½ï¿½ó¥¹¤ï¿½1ï¿½Äºï¿½ë¡£
-        AbstractDisplay d3 = new StringDisplay("ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½Ï¡ï¿½");     // "ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½Ï¡ï¿½"ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½StringDisplayï¿½Î¥ï¿½ï¿½ó¥¹¥ï¿½ï¿½ó¥¹¤ï¿½1ï¿½Äºï¿½ë¡£
-        d1.display();                                               // d1,d2,d3ï¿½È¤â¡¢ï¿½ï¿½ï¿½Ù¤ï¿½Æ±ï¿½ï¿½AbstractDisplayï¿½Î¥ï¿½ï¿½Ö¥ï¿½ï¿½é¥¹ï¿½Î¥ï¿½ï¿½ó¥¹¥ï¿½ï¿½ó¥¹¤ï¿½ï¿½ï¿½ï¿½é¡¢
-        d2.display();                                               // ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½displayï¿½á¥½ï¿½Ã¥É¤ï¿½Æ¤Ó½Ğ¤ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½Ç¤ï¿½ï¿½ë¡£
-        d3.display();                                               // ï¿½Âºİ¤ï¿½Æ°ï¿½ï¿½Ï¸Ä¡ï¿½ï¿½Î¥ï¿½ï¿½é¥¹CharDisplayï¿½ï¿½StringDisplayï¿½ï¿½ï¿½ï¿½Ş¤ë¡£
+        AbstractDisplay d1 = new CharDisplay('H');                  // 'H'‚ğ‚Á‚½CharDisplay‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ1ŒÂì‚éB
+        AbstractDisplay d2 = new StringDisplay("Hello, world.");    // "Hello, world."‚ğ‚Á‚½StringDisplay‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ1ŒÂì‚éB
+        AbstractDisplay d3 = new StringDisplay("‚±‚ñ‚É‚¿‚ÍB");     // "‚±‚ñ‚É‚¿‚ÍB"‚ğ‚Á‚½StringDisplay‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ1ŒÂì‚éB
+        d1.display();                                               // d1,d2,d3‚Æ‚àA‚·‚×‚Ä“¯‚¶AbstractDisplay‚ÌƒTƒuƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚¾‚©‚çA
+        d2.display();                                               // Œp³‚µ‚½displayƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·‚±‚Æ‚ª‚Å‚«‚éB
+        d3.display();                                               // ÀÛ‚Ì“®ì‚ÍŒÂX‚ÌƒNƒ‰ƒXCharDisplay‚âStringDisplay‚Å’è‚Ü‚éB
     }
 }
