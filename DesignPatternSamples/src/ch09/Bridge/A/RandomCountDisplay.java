@@ -1,4 +1,4 @@
-package ch09.Bridge.A2;
+package ch09.Bridge.A;
 
 import java.util.Random;
 

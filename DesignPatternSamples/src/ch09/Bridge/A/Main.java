@@ -1,4 +1,4 @@
-package ch09.Bridge.A2;
+package ch09.Bridge.A;
 
 public class Main {
     public static void main(String[] args) {

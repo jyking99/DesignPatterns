@@ -1,11 +1,11 @@
-package ch09.Bridge.A2;
+package ch09.Bridge.A;
 
 import java.io.*;
 
 public class FileDisplayImpl extends DisplayImpl {
     private String filename;
     private BufferedReader reader;
-    private final int MAX_READAHEAD_LIMIT = 4096;   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    private final int MAX_READAHEAD_LIMIT = 4096;   // ?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½
     public FileDisplayImpl(String filename) {
         this.filename = filename;
     }
@@ -16,12 +16,12 @@ public class FileDisplayImpl extends DisplayImpl {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("=-=-=-=-=-= " + filename + " =-=-=-=-=-="); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("=-=-=-=-=-= " + filename + " =-=-=-=-=-="); // ?¿½?¿½?¿½?¿½?¿½?¿½
     }
     public void rawPrint() {
         try {
             String line;
-            reader.reset(); // markï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            reader.reset(); // mark?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½
             while ((line = reader.readLine()) != null) {
                 System.out.println("> " + line);
             }
@@ -30,7 +30,7 @@ public class FileDisplayImpl extends DisplayImpl {
         }
     }
     public void rawClose() {
-        System.out.println("=-=-=-=-=-= "); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("=-=-=-=-=-= "); // ?¿½?¿½?¿½?¿½?¿½?¿½
         try {
             reader.close();
         } catch (IOException e) {

@@ -1,10 +1,10 @@
-package ch09.Bridge.A2;
+package ch09.Bridge.A;
 
 public class CountDisplay extends Display {
     public CountDisplay(DisplayImpl impl) {
         super(impl);
     }
-    public void multiDisplay(int times) {       // timesï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public void multiDisplay(int times) {       // times?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½?¿½
         open();
         for (int i = 0; i < times; i++) {
             print();
