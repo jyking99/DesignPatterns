@@ -3,33 +3,33 @@ package ch07.Builder;
 import java.io.*;
 
 public class HTMLBuilder extends Builder {
-    private String filename;                                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾
-    private PrintWriter writer;                                 // ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ñ¤­¹ï¿½ï¿½ï¿½PrintWriter
-    public void makeTitle(String title) {                       // HTMLï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ç¤Î¥ï¿½ï¿½ï¿½ï¿½È¥ï¿½
-        filename = title + ".html";                                 // ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ò¸µ¤Ë¥Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½
+    private String filename;                                    // ì¬‚·‚éƒtƒ@ƒCƒ‹–¼
+    private PrintWriter writer;                                 // ƒtƒ@ƒCƒ‹‚É‘‚«‚ŞPrintWriter
+    public void makeTitle(String title) {                       // HTMLƒtƒ@ƒCƒ‹‚Å‚Ìƒ^ƒCƒgƒ‹
+        filename = title + ".html";                                 // ƒ^ƒCƒgƒ‹‚ğŒ³‚Éƒtƒ@ƒCƒ‹–¼Œˆ’è
         try {
-            writer = new PrintWriter(new FileWriter(filename));     // PrintWriterï¿½ï¿½ï¿½ï¿½
+            writer = new PrintWriter(new FileWriter(filename));     // PrintWriter‚ğì‚é
         } catch (IOException e) {
             e.printStackTrace();
         }
-        writer.println("<html><head><title>" + title + "</title></head><body>");    // ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½
+        writer.println("<html><head><title>" + title + "</title></head><body>");    // ƒ^ƒCƒgƒ‹‚ğo—Í
         writer.println("<h1>" + title + "</h1>");
     }
-    public void makeString(String str) {                        // HTMLï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ç¤ï¿½Ê¸ï¿½ï¿½ï¿½ï¿½
-        writer.println("<p>" + str + "</p>");                       // <p>ï¿½ï¿½ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½
+    public void makeString(String str) {                        // HTMLƒtƒ@ƒCƒ‹‚Å‚Ì•¶š—ñ
+        writer.println("<p>" + str + "</p>");                       // <p>ƒ^ƒO‚Åo—Í
     }
-    public void makeItems(String[] items) {                     // HTMLï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ç¤Î²Õ¾ï¿½ï¿½
-        writer.println("<ul>");                                     // <ul>ï¿½ï¿½<li>ï¿½Ç½ï¿½ï¿½ï¿½
+    public void makeItems(String[] items) {                     // HTMLƒtƒ@ƒCƒ‹‚Å‚Ì‰Óğ‘‚«
+        writer.println("<ul>");                                     // <ul>‚Æ<li>‚Åo—Í
         for (int i = 0; i < items.length; i++) {
             writer.println("<li>" + items[i] + "</li>");
         }
         writer.println("</ul>");
     }
-    public void close() {                                       // Ê¸ï¿½ï¿½Î´ï¿½ï¿½ï¿½
-        writer.println("</body></html>");                           // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¤ï¿½ï¿½ï¿½
-        writer.close();                                             // ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½ò¥¯¥ï¿½ï¿½ï¿½
+    public void close() {                                       // •¶‘‚ÌŠ®¬
+        writer.println("</body></html>");                           // ƒ^ƒO‚ğ•Â‚¶‚é
+        writer.close();                                             // ƒtƒ@ƒCƒ‹‚ğƒNƒ[ƒY
     }
-    public String getResult() {                                 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½ï¿½
-        return filename;                                            // ï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½Ö¤ï¿½
+    public String getResult() {                                 // Š®¬‚µ‚½•¶‘
+        return filename;                                            // ƒtƒ@ƒCƒ‹–¼‚ğ•Ô‚·
     }
 }

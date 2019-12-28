@@ -1,4 +1,5 @@
 package ch08.abstractFactory.factory;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -19,7 +20,7 @@ public abstract class Page {
             Writer writer = new FileWriter(filename);
             writer.write(this.makeHTML());
             writer.close();
-            System.out.println(filename + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş¤ï¿½ï¿½ï¿½ï¿½ï¿½");
+            System.out.println(filename + " ‚ğì¬‚µ‚Ü‚µ‚½B");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -2,22 +2,22 @@ package ch07.Builder;
 
 public class Director {
     private Builder builder;
-    public Director(Builder builder) {      // Builderï¿½Î¥ï¿½ï¿½Ö¥ï¿½ï¿½é¥¹ï¿½Î¥ï¿½ï¿½ó¥¹¥ï¿½ï¿½ó¥¹¤ï¿½Í¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤Ç¡ï¿½
-        this.builder = builder;             // builderï¿½Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½É¤ï¿½ï¿½İ»ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½
+    public Director(Builder builder) {      // Builder‚ÌƒTƒuƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ª—^‚¦‚ç‚ê‚é‚Ì‚ÅA
+        this.builder = builder;             // builderƒtƒB[ƒ‹ƒh‚É•Û‚µ‚Ä‚¨‚­B
     }
-    public void construct() {             // Ê¸ï¿½ï¿½ï¿½ï¿½
-        builder.makeTitle("Greeting");              // ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½
-        builder.makeString("Ä«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½ï¿½");     // Ê¸ï¿½ï¿½ï¿½ï¿½
-        builder.makeItems(new String[]{             // ï¿½Õ¾ï¿½ï¿½
-            "ï¿½ï¿½ï¿½Ï¤è¤¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş¤ï¿½ï¿½ï¿½",
-            "ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½Ï¡ï¿½",
+    public void construct() {             // •¶‘\’z
+        builder.makeTitle("Greeting");              // ƒ^ƒCƒgƒ‹
+        builder.makeString("’©‚©‚ç’‹‚É‚©‚¯‚Ä");     // •¶š—ñ
+        builder.makeItems(new String[]{             // ‰Óğ‘‚«
+            "‚¨‚Í‚æ‚¤‚²‚´‚¢‚Ü‚·B",
+            "‚±‚ñ‚É‚¿‚ÍB",
         });
-        builder.makeString("ï¿½ï¿½ï¿½");                 // ï¿½Ì¤ï¿½Ê¸ï¿½ï¿½ï¿½ï¿½
-        builder.makeItems(new String[]{             // ï¿½Ì¤Î²Õ¾ï¿½ï¿½
-            "ï¿½ï¿½ï¿½ï¿½Ğ¤ï¿½Ï¡ï¿½",
-            "ï¿½ï¿½ï¿½ä¤¹ï¿½ß¤Ê¤ï¿½ï¿½ï¿½ï¿½ï¿½",
-            "ï¿½ï¿½ï¿½è¤¦ï¿½Ê¤é¡£",
+        builder.makeString("–é‚É");                 // •Ê‚Ì•¶š—ñ
+        builder.makeItems(new String[]{             // •Ê‚Ì‰Óğ‘‚«
+            "‚±‚ñ‚Î‚ñ‚ÍB",
+            "‚¨‚â‚·‚İ‚È‚³‚¢B",
+            "‚³‚æ‚¤‚È‚çB",
         });
-        builder.close();                 // Ê¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        builder.close();                 // •¶‘‚ğŠ®¬‚³‚¹‚é
     }
 }
