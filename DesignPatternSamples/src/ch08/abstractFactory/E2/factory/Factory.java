@@ -1,4 +1,4 @@
-package ch08.abstractFactory.factory;
+package ch08.abstractFactory.E2.factory;
 
 public abstract class Factory {
     public static Factory getFactory(String classname) {
@@ -15,4 +15,12 @@ public abstract class Factory {
     public abstract Link createLink(String caption, String url);
     public abstract Tray createTray(String caption);
     public abstract Page createPage(String title, String author);
+    
+    public Page createYahooPage() {
+    	Link yahooLink = createLink("Yahoo!", "http://www.yahoo.co.jp");
+    	Page yahooPage = createPage("Yahoo!", "Yahoo!");
+    	yahooPage.add(yahooLink);
+    	
+		return yahooPage;
+    }
 }

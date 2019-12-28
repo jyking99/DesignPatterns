@@ -1,4 +1,5 @@
 package ch08.abstractFactory;
+
 import ch08.abstractFactory.factory.*;
 
 public class Main {
@@ -9,17 +10,17 @@ public class Main {
             System.out.println("Example 2: java Main tablefactory.TableFactory");
             System.exit(0);
         }
-        Factory factory = Factory.getFactory("../" + args[0]);
+        Factory factory = Factory.getFactory(args[0]);
 
-        Link asahi = factory.createLink("Ä«ï¿½ï¿½ï¿½ï¿½Ê¹", "http://www.asahi.com/");
-        Link yomiuri = factory.createLink("ï¿½ï¿½ï¿½ä¿·Ê¹", "http://www.yomiuri.co.jp/");
+        Link asahi = factory.createLink("’©“úV•·", "http://www.asahi.com/");
+        Link yomiuri = factory.createLink("“Ç”„V•·", "http://www.yomiuri.co.jp/");
 
         Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
         Link jp_yahoo = factory.createLink("Yahoo!Japan", "http://www.yahoo.co.jp/");
         Link excite = factory.createLink("Excite", "http://www.excite.com/");
         Link google = factory.createLink("Google", "http://www.google.com/");
 
-        Tray traynews = factory.createTray("ï¿½ï¿½Ê¹");
+        Tray traynews = factory.createTray("V•·");
         traynews.add(asahi);
         traynews.add(yomiuri);
 
@@ -27,12 +28,12 @@ public class Main {
         trayyahoo.add(us_yahoo);
         trayyahoo.add(jp_yahoo);
 
-        Tray traysearch = factory.createTray("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó¥¸¥ï¿½");
+        Tray traysearch = factory.createTray("ƒT[ƒ`ƒGƒ“ƒWƒ“");
         traysearch.add(trayyahoo);
         traysearch.add(excite);
         traysearch.add(google);
 
-        Page page = factory.createPage("LinkPage", "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½");
+        Page page = factory.createPage("LinkPage", "Œ‹é _");
         page.add(traynews);
         page.add(traysearch);
         page.output();
