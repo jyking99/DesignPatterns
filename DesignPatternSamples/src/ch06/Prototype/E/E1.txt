@@ -1,0 +1,1 @@
+クローンが作れるのはMessageBoxクラスとUnderlinePenクラスではなくProductクラスなので、createCloneメソッドはProductクラスにのみ定義すれば良い。

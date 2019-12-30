@@ -1,0 +1,3 @@
+java.lang.ObjectクラスはCloneableインターフェースを実装していないので、Cloneableインターフェースを実装することを宣言せずにcloneメソッドを使うとRuntime exceptionが投げられる。
+
+source: https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
